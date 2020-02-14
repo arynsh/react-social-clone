@@ -4,7 +4,7 @@ function Navbar()
   var navContainer =
   {
     padding: '40px',
-    marginBottom: '50px',
+    marginBottom: '15px',
     border: '2px',
     backgroundColor: '#ecf0f1'
   };
@@ -45,7 +45,7 @@ function Navbar()
      <a href="#" style = {listLinks}>Home</a>
      <a href="#" style = {listLinks}>About</a>
      <a href="#" style = {listLinks}>Contact</a>
-     <input type='text' id='tweedId' style={inputTweet} placeholder='Tweet'/>
+     <button id='tweedId' style={inputTweet}>Tweet</button>
      <input type='text' id='searchId' style={inputSearch} placeholder='Search'/>
      <br/>
     </div>

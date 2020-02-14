@@ -1,32 +1,65 @@
 import React from "react";
 function UserCard()
 {
-  var cardContainer =
+  var userInfo =
   {
-    float:'left',
-    padding: '50px',
-    marginBottom: '60px',
-    border: '2px',
-    backgroundColor: '#ecf0f1'
+
+    
+    margin: "20px 0px",
+    border: "2px solid gray",
+    height: "210px",
+    marginTop: "10px"
 
   }
-  var stylingLinks =
+  var halfBlue =
+  {
+    backgroundColor: "#33AAFF",
+    height: "110px"
+  }
+  var image =
+  {
+    width: "90px",
+    marginTop: "-60px",
+    border: "2px solid white",
+    borderRadius: "50px",
+    marginLeft: "16px"
+  }
+  var nameStyle =
+  {
+    color: "slategrey",
+    fontSize: "18px",
+    fontWeight: "bold",
+    fontFamily: "arial",
+    marginTop: "-20px",
+    display: "inline-block",
+    marginLeft: "18px"
+
+  }
+  var styleLinks =
   {
 
-    padding: '10px',
-    position: 'relative',
+    marginTop: "11px"
 
 
+  }
+  var links =
+  {
+    color: "slategrey",
+    fontSize: "12px",
+    marginLeft: "24px",
+    fontFamily: "Arial",
+    marginTop: "33px"
   }
   return (
-    <div style={cardContainer}>
-    <h3>Adilet Momunaliev</h3>
-    <a href="#" style={stylingLinks}>Tweets</a>
-    <a href="#" style={stylingLinks}>Following</a>
-    <a href="#" style={stylingLinks}>Followers</a>
-
-
-    <br/>
+    <div style = {userInfo}>
+      <div style = {halfBlue}/>
+        <img style = {image} src = "https://bluelti.com/wp-content/uploads/2018/06//group-1824145_640.png"></img>
+        <div style = {nameStyle}>Kellie A. Corrigan</div>
+        <div style = {styleLinks}>
+          <a href="#" style = {links}>Tweets</a>
+          <a href="#" style = {links}>Following</a>
+          <a href="#" style = {links}>Followers</a>
+        </div>
    </div>
 
   );

@@ -1,17 +1,14 @@
 import React from "react";
-import TicketList from "./TicketList";
-import Header from "./Header";
 import Navbar from "./Navbar";
-import UserCard from "./UserCard";
+import Body from "./Body";
 
 
 function App(){
   return (
     <div>
       <Navbar/>
-      <UserCard/>
-      <Header/>
-      <TicketList/>
+      <hr/>
+      <Body/>
     </div>
   );
 }
